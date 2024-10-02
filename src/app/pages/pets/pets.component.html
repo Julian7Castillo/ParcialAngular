@@ -1,1 +1,27 @@
-<p>pets works!</p>
+<section class="m-20 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
+    @for (pet of pets; track pet) {
+        <app-card-pets
+            [imagen]="pet.imagen"
+            [nombre]="pet.nombre"
+            [numero]="pet.numero"
+            [tipo]="pet.tipo"
+            [genero]="pet.genero"
+            [raza]="pet.raza"
+            [edad]="pet.edad"
+            [color]="pet.color"
+            [duenios]="pet.duenios"
+        />
+    }
+</section>
+
+<section class="py-10 bg-[#70949d] text-white">
+    <p class="text-center">C H E C K O U T P E T S G A L L E R Y</p>
+</section>
+<section class="grid  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+    <img class="duration-300 hover:bg-slate-800 hover:cursor-pointer hover:scale-110" src="cat.jpg" alt="">
+    <img class="duration-300 hover:bg-slate-800 hover:cursor-pointer hover:scale-110" src="cat.jpg" alt="">
+    <img class="duration-300 hover:bg-slate-800 hover:cursor-pointer hover:scale-110" src="cat.jpg" alt="">
+    <img class="duration-300 hover:bg-slate-800 hover:cursor-pointer hover:scale-110" src="cat.jpg" alt="">
+    <img class="duration-300 hover:bg-slate-800 hover:cursor-pointer hover:scale-110" src="cat.jpg" alt="">
+    <img class="duration-300 hover:bg-slate-800 hover:cursor-pointer hover:scale-110" src="cat.jpg" alt="">
+</section>

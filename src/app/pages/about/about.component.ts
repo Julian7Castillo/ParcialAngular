@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component} from '@angular/core';
 import { Card } from '../../models/cads.mod';
 import { CardAboutComponent } from "../../components/card-about/card-about.component";
 

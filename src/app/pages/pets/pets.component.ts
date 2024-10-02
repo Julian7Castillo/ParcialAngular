@@ -1,11 +1,12 @@
 import { CardPetsComponent } from "../../components/card-pets/card-pets.component";
 import { Component} from '@angular/core';
 import { Ped } from "../../models/card-peds";
+import { HeaderComponent } from "../../components/header/header.component";
 
 @Component({
   selector: 'app-pets',
   standalone: true,
-  imports: [CardPetsComponent],
+  imports: [CardPetsComponent, HeaderComponent],
   templateUrl: './pets.component.html',
   styleUrl: './pets.component.css'
 })

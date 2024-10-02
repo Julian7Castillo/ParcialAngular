@@ -1,11 +1,12 @@
 import { Component} from '@angular/core';
 import { Card } from '../../models/cads.mod';
 import { CardAboutComponent } from "../../components/card-about/card-about.component";
+import { HeaderComponent } from "../../components/header/header.component";
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [CardAboutComponent],
+  imports: [CardAboutComponent, HeaderComponent],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { MenuOpcionesComponent } from "../menu-opciones/menu-opciones.component";
 import { MenuRedesComponent } from "../menu-redes/menu-redes.component";
@@ -11,5 +11,6 @@ import { MenuRedesComponent } from "../menu-redes/menu-redes.component";
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-
+  @Input() titulo:String|undefined
+  @Input() descripcion:String|undefined
 }
